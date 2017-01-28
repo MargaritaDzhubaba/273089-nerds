@@ -107,7 +107,6 @@ h2 {
 
 .location {
   width:1440px;
-  min-height: 416px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -116,7 +115,6 @@ h2 {
   float: left;
   width: 260px;
   margin-right: 140px;
-  outline: 1px solid #666;
 }
 
 .footer-text {
@@ -127,33 +125,25 @@ h2 {
 .main-title {
   float: left;
   width: 1160px;
-  min-height: 240px;
-  outline: 1px solid #666;
   margin-bottom: 57px;
 }
 
 .vertical-filter {
   float: left;
   width: 260px;
-  min-height: 780px;
   margin-right: 140px;
-  outline: 1px solid #666;
 }
 
 .horizontal-filter {
   float: left;
   width: 760px;
-  min-height: 25px;
   margin-bottom: 56px;
-  outline: 1px solid #666;
 }
 
 .catalog {
   float: left;
   width: 760px;
-  min-height: 1925px;
   margin-bottom: 60px;
-  outline: 1px solid #666;
   font-size: 0px;
   margin-bottom: 60px;
 }
@@ -170,8 +160,6 @@ h2 {
 .paginator {
   float: left;
   width: 443px;
-  min-height: 50px;
   margin-left: 400px;
-  outline: 1px solid #666;
   margin-bottom: 60px;
 }
