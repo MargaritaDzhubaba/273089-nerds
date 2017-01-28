@@ -7,9 +7,9 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="conteiner">
-        <a class="logo" href="#">Логотип</a>
+      <div class="container clearfix">
         <nav class="main-navigation">
+          <a class="logo" href="#">Логотип Нердс</a>
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -28,16 +28,16 @@
         <div class="user-block">
           <a class="cart" href="#">Корзина</a>
         </div>
-      </div>
-      <div class="main-title">
+        <div class="main-title clearfix">
         <h1>Магазин готовых решений</h1>
-      </div>
+        </div>
+      </div>  
     </header>
 
 
     <main class="container">
-      <section class="vertical-filter">
-        <form action="https://nerds.ru" method="post">
+      <section class="vertical-filter clearfix">
+        <form action="https://nerds.ru" method="get">
           <div class="filter-range">
             <p>Стоимость</p>
             <div class="scale">
@@ -93,27 +93,29 @@
         </form>  
       </section>
 
+      
+      <section class="horizontal-filter clearfix">
+        <p>Сортировать</p>
+        <div class="filter-type">
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По названию</a>
+          <a href="#">По уменьшению</a>
+          <a href="#">По возрастанию</a>
+        </div>  
+      </section>  
+
       <div class="content">
-          <div class="horizontal-filter">
-            <p>Сортировать</p>
-            <div class="filter-type">
-              <a href="#">По цене</a>
-              <a href="#">По типу</a>
-              <a href="#">По названию</a>
-              <a href="#">По уменьшению</a>
-              <a href="#">По возрастанию</a>
-            </div>  
-          </div>  
-          <section class="catalog">
-            <div class="catalog-item">
-              <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+        <section class="catalog clearfix">
+          <div class="catalog-item">
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
               <div class="catalog-item-info">
-                  <h2 class="info-title">Sedona</h2>
-                  <p class="info-text">Информационный сайт для туристов</p>
-                  <a  class="info-price" href="#">9900 руб.</a>
-                </div>
-            </div>
-            <div class="catalog-item">
+                <h2 class="info-title">Sedona</h2>
+                <p class="info-text">Информационный сайт для туристов</p>
+                <a  class="info-price" href="#">9900 руб.</a>
+              </div>
+          </div>
+          <div class="catalog-item">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Pink APP">
               <div class="catalog-item-info">
                   <h2 class="info-title">Pink APP</h2>
@@ -153,8 +155,8 @@
                   <a  class="info-price" href="#">9900 руб.</a>
                 </div>
             </div>
-          </section>
-          <div class="paginator">
+          </section>  
+          <div class="paginator clearfix">
             <a href="#1">1</a>
             <a href="#2">2</a>
             <a href="#3">3</a>
@@ -164,12 +166,12 @@
     </main>
 
 
-    <footer class="main-footer">
+   <footer class="main-footer">
       <section class="location">
         <div class="contacts">
           <div class="contacts-title">Nërds design studio</div>
           <div class="contacts-catalog-item">
-          191186, Санкт-Петербург, <br>
+             191186, Санкт-Петербург, <br>
               ул. Б. Конюшенная, д. 19/8
           </div>
           <div class="contacts-catalog-item">тел. +7 (812) 275-75-75</div>
@@ -179,17 +181,17 @@
           <img src="img/map-location-nerds.jpg" width="1440" height="416" alt="Карта">
         </div>  
       </section> 
-      <div class="container">
-        <div class="footer-social">
+      <div class="container clearfix">
+        <section class="social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </div>
-        <div class="footer-text">
-          <h3 class="footer-title">Давайте дружить, это выгодно!</h3>
+        </section>
+        <section class="footer-text">
+          <h3 class="join-us">Давайте дружить, это выгодно!</h3>
           <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </div>
+        </section>
+      </div>  
     </footer>  
   </body>
 </html>

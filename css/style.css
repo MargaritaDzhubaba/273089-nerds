@@ -1,3 +1,11 @@
+html,
+body {
+  min-width: 1440px;
+  min-height: 2475px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 16px;
   font-family:  "Roboto",  Sans-Serif;
@@ -18,6 +26,152 @@ h2 {
     text-transform: uppercase;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
+.main-header {
+  margin-top: 49px;
+  margin-bottom: 80px;
+}
 
+.main-navigation {
+  float: left;
+  width: 980px;
+}
+
+.user-block {
+  float: right;
+  width: 160px;
+}
+
+.slider {
+  float: left;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1160px;
+  min-height: 430px;
+}
+
+.services-item {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+  margin-bottom: 80px;
+}
+
+.services-item: last-child {
+  margin-right: 0px;
+}
+
+.index-content {
+  padding-top: 40px;
+  padding-bottom: 77px;
+}
+
+.index-content-left {
+  float: left;
+  width: 660px;
+  margin-right: 140px;
+}
+
+.index-content-right {
+  float: left;
+  width: 360px;
+}
+
+.partners ul {
+  width: 1160px;
+  min-height: 180px;
+  padding: 0;
+  font-size: 0px;
+  margin-bottom: 80px;
+}
+
+.logo-partners li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.logo-partners li:last-child {
+  margin-right: 0;
+}
+
+.location {
+  width:1440px;
+  min-height: 416px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social {
+  float: left;
+  width: 260px;
+  margin-right: 140px;
+  outline: 1px solid #666;
+}
+
+.footer-text {
+  float: left;
+  width: 760px;
+}
+
+.main-title {
+  float: left;
+  width: 1160px;
+  min-height: 240px;
+  outline: 1px solid #666;
+  margin-bottom: 57px;
+}
+
+.vertical-filter {
+  float: left;
+  width: 260px;
+  min-height: 780px;
+  margin-right: 140px;
+  outline: 1px solid #666;
+}
+
+.horizontal-filter {
+  float: left;
+  width: 760px;
+  min-height: 25px;
+  margin-bottom: 56px;
+  outline: 1px solid #666;
+}
+
+.catalog {
+  float: left;
+  width: 760px;
+  min-height: 1925px;
+  margin-bottom: 60px;
+  outline: 1px solid #666;
+  font-size: 0px;
+  margin-bottom: 60px;
+}
+
+.catalog-item {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.paginator {
+  float: left;
+  width: 443px;
+  min-height: 50px;
+  margin-left: 400px;
+  outline: 1px solid #666;
+  margin-bottom: 60px;
+}
