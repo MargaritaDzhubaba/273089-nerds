@@ -1,3 +1,7 @@
+* {
+  outline: 1px dashed red;
+}
+
 html,
 body {
   min-width: 1440px;
@@ -32,15 +36,10 @@ h2 {
   clear: both;
 }
 
-.container{
-  width: 1200px;
+.container {
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-.main-header {
-  margin-top: 49px;
-  margin-bottom: 80px;
 }
 
 .main-navigation {
@@ -53,11 +52,8 @@ h2 {
   width: 160px;
 }
 
-.slider {
-  float: left;
-  margin-right: auto;
-  margin-left: auto;
-  width: 1160px;
+.services {
+  margin-top: 80px;
 }
 
 .services-item {
@@ -67,7 +63,7 @@ h2 {
   margin-bottom: 80px;
 }
 
-.services-item: last-child {
+.services-item:last-child {
   margin-right: 0px;
 }
 
@@ -79,11 +75,10 @@ h2 {
 .index-content-left {
   float: left;
   width: 660px;
-  margin-right: 140px;
 }
 
 .index-content-right {
-  float: left;
+  float: right;
   width: 360px;
 }
 
@@ -93,11 +88,11 @@ h2 {
   padding: 0;
   vertical-align: top;
   font-size: 0px;
-  
 }
 
 .logo-partners li {
   display: inline-block;
+  width: 260px;
   margin-right: 40px;
 }
 
@@ -123,21 +118,21 @@ h2 {
 }
 
 .main-title {
-  float: left;
   width: 1160px;
+  min-height: 241px;
   margin-bottom: 57px;
 }
 
-.vertical-filter {
+.container-left {
   float: left;
   width: 260px;
   margin-right: 140px;
 }
 
-.horizontal-filter {
+.container-right {
   float: left;
   width: 760px;
-  margin-bottom: 56px;
+  margin-bottom: 60px;
 }
 
 .catalog {
@@ -161,6 +156,4 @@ h2 {
 .paginator {
   float: left;
   width: 443px;
-  margin-left: 400px;
-  margin-bottom: 60px;
 }
