@@ -21,6 +21,7 @@ h1  {
   font-size: 55px; 
   line-height: 1;
   color: #000000;
+  /*margin: 0;*/
 }
 
 h2 {
@@ -28,6 +29,11 @@ h2 {
     line-height: 1,25;
     color: #000000;
     text-transform: uppercase;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .clearfix::after {
@@ -53,17 +59,7 @@ h2 {
 }
 
 .slider {
-  width: 1160px;
-  margin: 0 auto;
-}
-
-.main-title {
-  width: 1160px;
-  margin: 0 auto; 
-}
-
-.services {
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .services-item {
@@ -95,7 +91,6 @@ h2 {
 .partners ul {
   width: 1160px;
   margin-bottom: 80px;
-  padding: 0;
   vertical-align: top;
   font-size: 0px;
 }
@@ -128,8 +123,6 @@ h2 {
 }
 
 .main-title {
-  width: 1160px;
-  min-height: 241px;
   margin-bottom: 57px;
 }
 
@@ -146,11 +139,9 @@ h2 {
 }
 
 .catalog {
-  float: left;
   width: 760px;
   margin-bottom: 60px;
   font-size: 0px;
-  margin-bottom: 60px;
 }
 
 .catalog-item {
@@ -164,6 +155,16 @@ h2 {
 }
 
 .paginator {
-  float: left;
   width: 443px;
+  font-size: 0px;
+  /*white-space: nowrap;*/
 }
+
+.paginator a {
+  display: inline-block;
+  height: 50px;
+  min-width: 50px;
+  font-size: 16px;
+}
+
+
