@@ -52,6 +52,16 @@ h2 {
   width: 160px;
 }
 
+.slider {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-title {
+  width: 1160px;
+  margin: 0 auto; 
+}
+
 .services {
   margin-top: 80px;
 }
