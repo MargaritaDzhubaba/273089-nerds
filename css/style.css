@@ -11,10 +11,12 @@ body {
 }
 
 body {
+  min-width: 1200px;
+  font-weight: 500;
   font-size: 16px;
-  font-family:  "Roboto",  Sans-Serif;
+  font-family:  "Roboto",  "Arial" , Sans-Serif;
   color: #283136;
-  line-height: 1,5;
+  
 }
 
 h1  {
@@ -31,11 +33,6 @@ h2 {
     text-transform: uppercase;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 .clearfix::after {
   content: "";
   display: table;
@@ -48,18 +45,156 @@ ul {
   padding: 0 20px;
 }
 
+.main-header {
+  padding-top: 50px;  /*чтобы опустить немного от верхушки */
+  color: #000000;
+  background-color: #eeeeee;
+}
+
 .main-navigation {
+  position: relative;
   float: left;
   width: 980px;
 }
 
+.main-navigation .logo {
+  position: absolute;
+  padding: 0;
+  width: 160px;
+  height: 65px;
+}
+
+.main-navigation .logo:hover {
+  opacity: 0.8;
+}
+
+.main-navigation .logo:active {
+  opacity: 0.3;
+}
+
+.main-navigation ul {
+  margin: 0;
+  margin-left: 360px;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: top;
+}
+
+.main-navigation a {
+  display: block;
+  padding-top: 25px; 
+  padding-right: 47px; 
+  padding-bottom: 10px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-navigation a:hover {
+  color: #fb565a;
+}
+
+.main-navigation a:active {
+  opacity: 0.3;
+}
+
 .user-block {
   float: right;
-  width: 160px;
+  max-width: 160px;
+}
+
+.cart {
+  position: relative;
+  display: inline-block;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 41px;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: top;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cart::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/icon-cart.png") no-repeat;
+}
+
+.cart:hover {
+  color: #fb565a;
+}
+
+.cart:active {
+  opacity: 0.3;
 }
 
 .slider {
+  position: relative;
   margin-bottom: 80px;
+}
+
+.slider-info {
+  min-height: 430px;
+}
+
+.slogan {
+  margin: 0;
+  padding-top: 76px;
+  padding-bottom: 25px;
+}
+
+.slogan b {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: right;
+  color: #000000;
+}
+
+ .slider-text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+}
+
+.slider-info img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 53px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family:  "Roboto",  "Arial" , Sans-Serif;
+  vertical-align: top;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .services-item {
@@ -90,6 +225,8 @@ ul {
 
 .partners ul {
   width: 1160px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 80px;
   vertical-align: top;
   font-size: 0px;

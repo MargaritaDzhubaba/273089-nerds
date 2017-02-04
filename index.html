@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
-          <a class="logo">Логотип Нердс</a>
+          <a class="logo">
+          	<img src="img/logo-nerds.png" width="160px" height="65px" alt="Логотип Нердс">
+          </a>
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -32,38 +36,41 @@
 
       <div class="container">
         <div class="slider">
-         <ul>
-           <li>
-             <div class="slider-info">
-               <p><b class="slogan" >Долго, дорого, скурпулезно.</b></p>
-               <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-               <a class="btn" href="#">Узнать больше</a>
-             </div> 
-           </li>
-           <li>
-             <div class="slider-info">
-               <p><b class="slogan" >Любим математику как никто другой</b></p>
-               <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-               <a class="btn" href="#">Узнать больше</a>
-             </div> 
-           </li>
-           <li>
-             <div class="slider-info-item2">
-               <p><b class="slogan" >Только ночь, только хардкор</b></p>
-               <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-               <a class="btn" href="#">Узнать больше</a>
-             </div> 
-           </li>
-         </ul>
-         <div class=slider-btn>   
-           <ul>
-             <li><a href="#">Первый слайд</a></li>
-             <li><a href="#">Второй слайд</a></li>
-             <li><a href="#">Третий слайд</a></li>  
-           </ul> 
+          <div class="slider-info slide-1">
+             <p class="slogan" ><b>Долго, дорого, <br> 
+                                                        скрупулезно.</b></p>
+             <p class="slider-text">Математически выверенный дизайн <br>
+                    для вашего сайта или мобильного приложения.</p>
+             <a class="btn" href="#">Узнать больше</a>
+             <img src="img/slider-phones_1.png" width="760" height="431" alt="">
+          </div> 
+          <div class="slider-info slide-2">
+             <p class="slogan" ><b>Любим математику <br>
+                                                        как никто другой</b></p>
+             <p class="slider-text">Никакого креатива, только математические формулы <br>
+                    для расчета идеальных пропорций.</p>
+             <a class="btn" href="#">Узнать больше</a>
+             <img src="img/slider-tablets_1.png" width="760" height="431" alt="">
+          </div>
+          <div class="slider-info slide-3">
+             <p class="slogan" ><b>Только ночь, <br>
+                                                        только хардкор</b></p>
+             <p class="slider-text">Работать днем, как все? Мы против этого. <br>
+                    Ближе к полуночи работа только начинается.</p>
+             <a class="btn" href="#">Узнать больше</a>
+           </div>  
          </div>
+         <div class=slider-btn>   
+           <input type="radio" id="btn-1" name="toggle" checked>
+           <input type="radio" id="btn-2" name="toggle">
+           <input type="radio" id="btn-3" name="toggle">
+           <div class="slider-controls">
+             <label for="btn-1"></label>
+             <label for="btn-2"></label>
+             <label for="btn-3"></label>
+           </div>
+         </div>          
        </div>  
-      </div>  
      </header> 
 
 
