@@ -14,6 +14,7 @@ body {
   min-width: 1200px;
   font-weight: 500;
   font-size: 16px;
+  line-height: 24px;
   font-family:  "Roboto",  "Arial" , Sans-Serif;
   color: #283136;
   
@@ -23,7 +24,10 @@ h1  {
   font-size: 55px; 
   line-height: 1;
   color: #000000;
-  /*margin: 0;*/
+  margin: 0;
+  padding-top: 76px;
+  padding-bottom: 103px;
+  text-align: center;
 }
 
 h2 {
@@ -102,6 +106,7 @@ h2 {
 }
 
 .main-navigation a:active {
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -139,16 +144,67 @@ h2 {
 }
 
 .cart:active {
+  color: #000000;
   opacity: 0.3;
+}
+
+.cart:active::before {
+  opacity: 1
 }
 
 .slider {
   position: relative;
+  width: 1160px;
+  height: 430px;
+  margin: 0 auto;
   margin-bottom: 80px;
 }
 
-.slider-info {
-  min-height: 430px;
+.slider input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 105px;
+    left: 50%;
+    z-index: 1000;
+    width: 200px;
+    height: 10px;
+    margin-left: -100px;
+    text-align: center;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 8px;
+    background: #ffffff;
+    border: 5px solid #ffffff;
+    vertical-align: top;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+    background: #c1c1c1;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-info {
+  width: 518px;
 }
 
 .slogan {
@@ -165,7 +221,7 @@ h2 {
   color: #000000;
 }
 
- .slider-text {
+.slider-text {
   margin: 0;
   margin-bottom: 40px;
   font-size: 16px;
@@ -173,15 +229,9 @@ h2 {
   color: #283136;
 }
 
-.slider-info img {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .btn {
+  position: relative;
   display: inline-block;
-  padding: 16px 53px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -197,6 +247,70 @@ h2 {
   border-radius: 4px;
 }
 
+.slider-info .btn {
+  margin-bottom: 82px;
+}
+
+.slide:nth-child(1) {
+background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/slider-phones_1.png") no-repeat 100% 100%;
+}
+
+.slide:nth-child(2) {
+background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/slider-computers_1.png") no-repeat 100% 100%;
+}
+
+.slide:nth-child(3) {
+background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/slider-tablets_1.png") no-repeat 100% 100%;
+}
+
+.slide {
+    display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) { 
+    display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) { 
+    display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) { 
+    display: block;
+}
+
+.slider-info .btn::before {
+  content: "узнать больше";
+  position: absolute;
+  top: 16px;
+  left: 53px;
+  }
+
+.slider-info .btn:hover {
+  background-color: #e74246;
+}
+
+.slider-info .btn:active {
+  background-color: #d7373b
+} 
+
+.slider-info .btn:active::before {
+  opacity: 0.3;
+}
+
+.slider-info .btn {
+  width: 241px;
+  height: 50px;
+}
+
+.slider-info .btn:active{
+  background-color: #d7373b;
+}
+
+.services  {
+  border-bottom: 2px solid #eeeeee;
+}
+
 .services-item {
   float: left;
   width: 300px;
@@ -208,9 +322,83 @@ h2 {
   margin-right: 0px;
 }
 
+.services-item  h2 {
+  margin-bottom: 0;
+  font-size: 24px; 
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-item  p{
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 32px;
+  font-size: 16px; 
+  line-height: 24px;
+  color: #283136;
+}
+
+.services-item .btn {
+  width: 160px;
+  height: 50px;
+}
+
+.services-item .btn::before {
+  content: "заказать";
+  position: absolute;
+  top: 16px;
+  left: 40px;
+  }
+
+.services-item-1 .btn:hover {
+  background-color: #e74246;
+}
+
+.services-item-1 .btn:active {
+  background-color: #d7373b
+} 
+
+.services-item-1 .btn:active::before {
+  opacity: 0.3;
+}
+
+.services-item-2 .btn {
+ background-color: #00ca74; 
+}
+
+.services-item-2 .btn:hover {
+ background-color: #00bc6c; 
+}
+
+.services-item-2 .btn:active {
+  background-color: #00aa62;
+} 
+
+.services-item-2 .btn:active::before {
+  opacity: 0.3;
+}
+
+.services-item-3 .btn {
+background-color: #efc84a  
+}
+
+.services-item-3 .btn:hover {
+background-color: #eab534;  
+}
+
+.services-item-3 .btn:active {
+  background-color: #e5a722;
+} 
+
+.services-item-3 .btn:active::before {
+  opacity: 0.3;
+}
+
 .index-content {
   padding-top: 40px;
-  padding-bottom: 77px;
+  padding-bottom: 56px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .index-content-left {
@@ -218,9 +406,90 @@ h2 {
   width: 660px;
 }
 
+.index-content-left  p {
+  color: #283136;
+}
+
+.about-us {
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.about-us b {
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.we-do {
+  margin-top: 40px;
+}
+
+.we-do b {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.index-content-services {
+  padding-left: 37px;
+  list-style: none;
+}
+
+.index-content-services li {
+  margin-top: 25px;
+}
+
 .index-content-right {
   float: right;
   width: 360px;
+}
+
+.index-content-right p{
+  margin: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.index-content-right b {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.benefits {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 15px;
+  width: 100px;
+  height: 120px;
+}
+
+.benefits-rate {
+  position: absolute;
+  top: 40px;
+  font-size: 45px;
+  line-height: 10.06px;
+  color: #000000;
+}
+
+.benefits-rate sup {
+  font-size: 65%;
+}
+
+.benefits-value {
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #283136;
 }
 
 .partners ul {
@@ -230,33 +499,143 @@ h2 {
   margin-bottom: 80px;
   vertical-align: top;
   font-size: 0px;
+  line-height: 0;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .logo-partners li {
   display: inline-block;
   width: 260px;
   margin-right: 40px;
+  opacity: 0.2;
+  cursor: pointer;
 }
 
 .logo-partners li:last-child {
   margin-right: 0;
 }
 
+.logo-partners li:hover {
+  opacity: 1;
+} 
+
+.logo-partners li:active {
+  opacity: 0.1;
+} 
+
 .location {
+  position: relative;
   width:1440px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.contacts {
+  position: absolute;
+  top: 54px;
+  left: 141px;
+  width: 219px;
+  height: 208px;
+  padding: 50px 50px;
+  background-color: #ffffff;
+}
+
+.contacts-title {
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contacts-catalog-item {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts .btn {
+  margin-top: 24px;
+  padding: 16px 43px;
+}
+
+.contacts .btn::before {
+  content: "напишите нам";
+  position: absolute;
+  top: 16px;
+  left: 43px;
+  }
+
+.contacts .btn:hover {
+  background-color: #e74246;
+}
+
+.contacts .btn:active {
+  background-color: #d7373b
+} 
+
+.contacts .btn:active::before {
+  opacity: 0.3;
+}
+
+
 .social {
   float: left;
   width: 260px;
   margin-right: 140px;
+  font-size: 0;
+}
+
+.social-btn {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: 60px;
+  margin-right: 10px;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #e1e1e1;
+}
+
+.social-btn-vk {
+  background: #e1e1e1 url("/Users/RitaDzhubaba/Documents/273089-nerds/img/icon-vk.png") no-repeat 50% 50%; 
+  }
+
+.social-btn-fb{
+  background: #e1e1e1 url("/Users/RitaDzhubaba/Documents/273089-nerds/img/icon-fb.png") no-repeat 50% 50%; 
+}
+
+.social-btn-inst {
+  background: #e1e1e1 url("/Users/RitaDzhubaba/Documents/273089-nerds/img/icon-insta.png") no-repeat 50% 50%; 
+  margin-right: 0px;
+}
+
+.social-btn:hover {
+  background-color: #e74246;
 }
 
 .footer-text {
   float: left;
   width: 760px;
+  padding-top: 70px;
+}
+
+.footer-text h3 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer-text p {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
 }
 
 .main-title {
