@@ -1,7 +1,7 @@
-* {
+/** {
   outline: 1px dashed brown;
 }
-
+*/
 html,
 body {
   min-width: 1440px;
