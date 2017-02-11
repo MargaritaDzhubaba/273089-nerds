@@ -1,7 +1,7 @@
-/** {
+* {
   outline: 1px dashed brown;
 }
-*/
+
 html,
 body {
   min-width: 1440px;
@@ -11,13 +11,12 @@ body {
 }
 
 body {
-  min-width: 1200px;
+  min-width: 900px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   font-family:  "Roboto",  "Arial" , Sans-Serif;
   color: #283136;
-  
 }
 
 h1  {
@@ -31,10 +30,10 @@ h1  {
 }
 
 h2 {
-    font-size: 24px; 
-    line-height: 1,25;
-    color: #000000;
-    text-transform: uppercase;
+  font-size: 24px; 
+  line-height: 1,25;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .clearfix::after {
@@ -49,8 +48,10 @@ h2 {
   padding: 0 20px;
 }
 
+/*Стилизация хэдера*/
+
 .main-header {
-  padding-top: 50px;  /*чтобы опустить немного от верхушки */
+  padding-top: 50px; 
   color: #000000;
   background-color: #eeeeee;
 }
@@ -136,20 +137,16 @@ h2 {
   left: 0px;
   width: 15px;
   height: 15px;
-  background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/icon-cart.png") no-repeat;
+  background: #eeeeee url("img/icon-cart.png") no-repeat;
 }
 
 .cart:hover {
   color: #fb565a;
 }
 
-.cart:active {
+.cart span:active {
   color: #000000;
   opacity: 0.3;
-}
-
-.cart:active::before {
-  opacity: 1
 }
 
 .slider {
@@ -161,37 +158,46 @@ h2 {
 }
 
 .slider input[type=radio] {
-    position: absolute;
-    opacity: 0;
+  position: absolute;
+  opacity: 0;
 }
 
 .slider-controls {
-    position: absolute;
-    bottom: 105px;
-    left: 50%;
-    z-index: 1000;
-    width: 200px;
-    height: 10px;
-    margin-left: -100px;
-    text-align: center;
+  position: absolute;
+  bottom: 105px;
+  left: 50%;
+  z-index: 1000;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  font-size: 0;
+  text-align: center;
 }
 
 .slider-controls label {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin: 0 8px;
-    background: #ffffff;
-    border: 5px solid #ffffff;
-    vertical-align: top;
-    border-radius: 50%;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 8px;
+  background: #ffffff;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
-    background: #c1c1c1;
+#btn-1:checked ~ .slider-controls label[for="btn-1"]::before,
+#btn-2:checked ~ .slider-controls label[for="btn-2"]::before,
+#btn-3:checked ~ .slider-controls label[for="btn-3"]::before{ 
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  background-color: #ffffff;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
 }
 
 .slide {
@@ -203,14 +209,14 @@ h2 {
   overflow: hidden;
 }
 
-.slide-info {
+.slider-info {
   width: 518px;
 }
 
 .slogan {
   margin: 0;
-  padding-top: 76px;
-  padding-bottom: 25px;
+  margin-top: 78px;
+  margin-bottom: 25px;
 }
 
 .slogan b {
@@ -224,6 +230,7 @@ h2 {
 .slider-text {
   margin: 0;
   margin-bottom: 40px;
+  padding-right: 100px;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -232,6 +239,7 @@ h2 {
 .btn {
   position: relative;
   display: inline-block;
+  padding: 16px 54px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -247,71 +255,63 @@ h2 {
   border-radius: 4px;
 }
 
+.btn span:active {
+  opacity: 0.3;
+}
+
 .slider-info .btn {
   margin-bottom: 82px;
 }
 
 .slide:nth-child(1) {
-background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/slider-phones_1.png") no-repeat 100% 100%;
+  background: #eeeeee url("img/slider-phones_1.png") no-repeat 100% 100%;
 }
 
 .slide:nth-child(2) {
-background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/slider-computers_1.png") no-repeat 100% 100%;
+  background: #eeeeee url("img/slider-computers_1.png") no-repeat 100% 100%;
 }
 
 .slide:nth-child(3) {
-background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/slider-tablets_1.png") no-repeat 100% 100%;
+  background: #eeeeee url("img/slider-tablets_1.png") no-repeat 100% 100%;
 }
 
 .slide {
-    display: none;
+  display: none;
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) { 
-    display: block;
+  display: block;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(2) { 
-    display: block;
+  display: block;
 }
 
 #btn-3:checked ~ .slides .slide:nth-child(3) { 
-    display: block;
+  display: block;
 }
-
-.slider-info .btn::before {
-  content: "узнать больше";
-  position: absolute;
-  top: 16px;
-  left: 53px;
-  }
 
 .slider-info .btn:hover {
   background-color: #e74246;
 }
 
 .slider-info .btn:active {
-  background-color: #d7373b
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
 } 
-
-.slider-info .btn:active::before {
-  opacity: 0.3;
-}
-
-.slider-info .btn {
-  width: 241px;
-  height: 50px;
-}
 
 .slider-info .btn:active{
   background-color: #d7373b;
 }
+
+/*Стилизация главной страницы*/
 
 .services  {
   border-bottom: 2px solid #eeeeee;
 }
 
 .services-item {
+  position: relative;
   float: left;
   width: 300px;
   margin-right: 100px;
@@ -322,8 +322,39 @@ background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/slider-t
   margin-right: 0px;
 }
 
+.services-item-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 146px;
+  background: #eeeeee url("img/sprite.png") no-repeat 0 -292px;
+}
+
+.services-item-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 146px;
+  background: #eeeeee url("img/sprite.png") no-repeat;
+}
+
+.services-item-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 146px;
+  background: #eeeeee url("/img/sprite.png") no-repeat 0 -146px;
+}
+
 .services-item  h2 {
-  margin-bottom: 0;
+  margin-top: 171px;
+  margin-bottom: 16px;
   font-size: 24px; 
   line-height: 30px;
   color: #000000;
@@ -331,40 +362,29 @@ background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/slider-t
 }
 
 .services-item  p{
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 32px;
+  margin-top: 0;
+  margin-bottom: 33px;
+  padding-right: 20px;
   font-size: 16px; 
   line-height: 24px;
   color: #283136;
 }
 
 .services-item .btn {
-  width: 160px;
-  height: 50px;
+  padding: 16px 40px;
 }
-
-.services-item .btn::before {
-  content: "заказать";
-  position: absolute;
-  top: 16px;
-  left: 40px;
-  }
 
 .services-item-1 .btn:hover {
   background-color: #e74246;
 }
 
 .services-item-1 .btn:active {
-  background-color: #d7373b
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
 } 
 
-.services-item-1 .btn:active::before {
-  opacity: 0.3;
-}
-
 .services-item-2 .btn {
- background-color: #00ca74; 
+  background-color: #00ca74; 
 }
 
 .services-item-2 .btn:hover {
@@ -373,31 +393,25 @@ background: #eeeeee url("/Users/RitaDzhubaba/Documents/273089-nerds/img/slider-t
 
 .services-item-2 .btn:active {
   background-color: #00aa62;
+  box-shadow: inset 0 3px 0 0 #009958;
 } 
 
-.services-item-2 .btn:active::before {
-  opacity: 0.3;
-}
-
 .services-item-3 .btn {
-background-color: #efc84a  
+  background-color: #efc84a  
 }
 
 .services-item-3 .btn:hover {
-background-color: #eab534;  
+  background-color: #eab534;  
 }
 
 .services-item-3 .btn:active {
   background-color: #e5a722;
+  box-shadow: inset 0 3px 0 0 #ce961f;
 } 
-
-.services-item-3 .btn:active::before {
-  opacity: 0.3;
-}
 
 .index-content {
   padding-top: 40px;
-  padding-bottom: 56px;
+  padding-bottom: 72px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -407,12 +421,14 @@ background-color: #eab534;
 }
 
 .index-content-left  p {
+  margin-top: 0;
+  margin-bottom: 40px;
   color: #283136;
 }
 
-.about-us {
-  margin-top: 35px;
-  margin-bottom: 30px;
+.index-content-left  .about-us {
+  margin-top: 34px;
+  margin-bottom: 35px;
 }
 
 .about-us b {
@@ -424,8 +440,8 @@ background-color: #eab534;
   color: #000000;
 }
 
-.we-do {
-  margin-top: 40px;
+.index-content-left  .we-do {
+  margin-bottom: 25px;
 }
 
 .we-do b {
@@ -436,12 +452,28 @@ background-color: #eab534;
 }
 
 .index-content-services {
+  margin: 0;
   padding-left: 37px;
   list-style: none;
 }
 
 .index-content-services li {
+  position: relative;
   margin-top: 25px;
+}
+
+.index-content-services li:first-child {
+  margin-top: 0px;
+}
+
+.index-content-services li::before {
+  content: "";
+  position: absolute;
+  bottom: 11px;
+  left: -36px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 
 .index-content-right {
@@ -449,9 +481,13 @@ background-color: #eab534;
   width: 360px;
 }
 
-.index-content-right p{
-  margin: 0;
-  margin-top: 30px;
+.index-content-right  img {
+  margin-bottom: 30px;
+}
+
+.index-content-right p {
+  margin-top: 0;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -460,21 +496,17 @@ background-color: #eab534;
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .benefits {
-  position: relative;
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: 15px;
-  width: 100px;
-  height: 120px;
+  float: left;
+  margin-right: 9px;
+  padding-top: 40px;
+  width: 110px;
 }
 
 .benefits-rate {
-  position: absolute;
-  top: 40px;
+  margin-bottom: 35px;
   font-size: 45px;
   line-height: 10.06px;
   color: #000000;
@@ -485,8 +517,7 @@ background-color: #eab534;
 }
 
 .benefits-value {
-  position: absolute;
-  bottom: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   color: #283136;
@@ -504,11 +535,26 @@ background-color: #eab534;
 }
 
 .logo-partners li {
+  position: relative;
   display: inline-block;
   width: 260px;
   margin-right: 40px;
   opacity: 0.2;
   cursor: pointer;
+}
+
+.logo-partners li::before {
+  content: "";
+  position: absolute;
+  top: 65px;
+  right: -20px;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+}
+
+.logo-partners li:last-child::before {
+  display: none;
 }
 
 .logo-partners li:last-child {
@@ -523,120 +569,7 @@ background-color: #eab534;
   opacity: 0.1;
 } 
 
-.location {
-  position: relative;
-  width:1440px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contacts {
-  position: absolute;
-  top: 54px;
-  left: 141px;
-  width: 219px;
-  height: 208px;
-  padding: 50px 50px;
-  background-color: #ffffff;
-}
-
-.contacts-title {
-  margin-bottom: 24px;
-  font-size: 18px;
-  line-height: 30px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.contacts-catalog-item {
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 18px;
-  color: #666666;
-}
-
-.contacts .btn {
-  margin-top: 24px;
-  padding: 16px 43px;
-}
-
-.contacts .btn::before {
-  content: "напишите нам";
-  position: absolute;
-  top: 16px;
-  left: 43px;
-  }
-
-.contacts .btn:hover {
-  background-color: #e74246;
-}
-
-.contacts .btn:active {
-  background-color: #d7373b
-} 
-
-.contacts .btn:active::before {
-  opacity: 0.3;
-}
-
-
-.social {
-  float: left;
-  width: 260px;
-  margin-right: 140px;
-  font-size: 0;
-}
-
-.social-btn {
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  margin-top: 60px;
-  margin-right: 10px;
-  vertical-align: top;
-  text-decoration: none;
-  border-radius: 50%;
-  background: #e1e1e1;
-}
-
-.social-btn-vk {
-  background: #e1e1e1 url("/Users/RitaDzhubaba/Documents/273089-nerds/img/icon-vk.png") no-repeat 50% 50%; 
-  }
-
-.social-btn-fb{
-  background: #e1e1e1 url("/Users/RitaDzhubaba/Documents/273089-nerds/img/icon-fb.png") no-repeat 50% 50%; 
-}
-
-.social-btn-inst {
-  background: #e1e1e1 url("/Users/RitaDzhubaba/Documents/273089-nerds/img/icon-insta.png") no-repeat 50% 50%; 
-  margin-right: 0px;
-}
-
-.social-btn:hover {
-  background-color: #e74246;
-}
-
-.footer-text {
-  float: left;
-  width: 760px;
-  padding-top: 70px;
-}
-
-.footer-text h3 {
-  margin: 0;
-  font-size: 36px;
-  line-height: 36px;
-  color: #000000;
-}
-
-.footer-text p {
-  margin: 0;
-  padding-top: 10px;
-  font-size: 16px;
-  line-height: 22px;
-  color: #444444;
-}
+/*Стилизация страницы каталога*/
 
 .main-title {
   margin-bottom: 57px;
@@ -673,14 +606,164 @@ background-color: #eab534;
 .paginator {
   width: 443px;
   font-size: 0px;
-  /*white-space: nowrap;*/
+  white-space: nowrap;
 }
 
 .paginator a {
   display: inline-block;
   height: 50px;
   min-width: 50px;
+  vertical-align: top;
   font-size: 16px;
 }
+
+/*Стилизация футера*/
+
+.location {
+  position: relative;
+  width:1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts {
+  position: absolute;
+  top: 54px;
+  left: 141px;
+  width: 219px;
+  height: 208px;
+  padding: 50px 50px;
+  background-color: #ffffff;
+}
+
+.contacts-title {
+  margin-bottom: 23px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.address {
+  margin-bottom: 17px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.tel {
+  margin-bottom: 39px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts .btn {
+  padding: 16px 43px;
+}
+
+.contacts .btn:hover {
+  background-color: #e74246;
+}
+
+.contacts .btn:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 #c13135;
+} 
+
+.map {
+  width: 1440px;
+  height: 416px;
+}
+
+.footer-bottom {
+  padding: 69px 0;
+}
+
+.social {
+  float: left;
+  width: 260px;
+  margin-right: 140px;
+  font-size: 0;
+}
+
+.social-btn {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  vertical-align: top;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #e1e1e1;
+}
+
+.social-btn-inst {
+  margin-right: 0px;
+}
+
+.social-btn-vk::before {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 27px;
+  width: 26px;
+  height: 15px;
+  background: url("img/icon-vk.png") no-repeat;
+}
+
+.social-btn-fb::before {
+  content: "";
+  position: absolute;
+  top: 29px;
+  left: 35px;
+  width: 12px;
+  height: 22px;
+  background: url("img/icon-fb.png") no-repeat;
+}
+
+.social-btn-inst::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 21px;
+  height: 21px;
+  background: url("img/icon-insta.png") no-repeat;
+}
+
+.social-btn-vk:active::before,
+.social-btn-fb:active::before,
+.social-btn-inst:active::before {
+  opacity: 0.3;
+}
+
+.social-btn:hover {
+  background-color: #e74246;
+}
+
+.footer-text {
+  float: left;
+  width: 760px;
+}
+
+.footer-text h3 {
+  margin: 0;
+  margin-top: 7px;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.footer-text p {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+
 
 

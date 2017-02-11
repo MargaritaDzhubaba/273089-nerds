@@ -11,7 +11,7 @@
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <img src="img/logo-nerds.png" width="160px" height="65px" alt="Логотип Нердс">
           </a>
           <ul>
@@ -21,8 +21,8 @@
             <li>
               <a href="#">Клиенты</a>
             </li>
-            <li>
-              <a href="#">Магазин</a>
+            <li class="active" >
+              <a>Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -94,7 +94,7 @@
               </label>
             </div>
             <div class="submit" > 
-              <input type="submit" value="Показать">
+              <input class="btn" type="submit" value="Показать">
             </div>  
         </form>  
       </section>
@@ -176,27 +176,29 @@
       <section class="location">
         <div class="contacts">
           <div class="contacts-title">Nërds design studio</div>
-          <div class="contacts-catalog-item">
+          <div class="contacts-catalog-item address">
              191186, Санкт-Петербург, <br>
               ул. Б. Конюшенная, д. 19/8
           </div>
-          <div class="contacts-catalog-item">тел. +7 (812) 275-75-75</div>
-          <a href="#">Напишите нам</a>
+          <div class="contacts-catalog-item tel">тел. +7 (812) 275-75-75</div>
+          <a class="btn" href="#"><span>Напишите нам</span></a>
         </div>
         <div class="map">           
           <img src="img/map-location-nerds.jpg" width="1440" height="416" alt="Карта">
         </div>  
       </section> 
-      <div class="container clearfix">
-        <section class="social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-text">
-          <h3 class="join-us">Давайте дружить, это выгодно!</h3>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
+      <div class="container">
+        <div class="footer-bottom clearfix">
+          <section class="social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </section>
+          <section class="footer-text">
+            <h3 class="join-us">Давайте дружить, это выгодно!</h3>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </section>
+        </div>  
       </div>  
     </footer>  
   </body>
