@@ -43,7 +43,7 @@
 
     <main class="container clearfix">
       <section class="container-left clearfix">
-        <form action="https://nerds.ru" method="get">
+        <form action="https://echo.htmlacademy.ru method="get">
           <div class="range-filter">
             <p class="filter-title">Стоимость:</p>
             <div class="range-controls">
@@ -60,19 +60,19 @@
           </div>  
           <div class="filter-radiobutton">
             <p class="filter-title">Сетка:</p>
-            <label>
+            <label class="grid-radiobutton">
               <input type="radio" name="gridtype" value="Адаптивная" checked>
               <span class="radiobutton-indicator"></span>
               Адаптивная
             </label>
             <br>
-            <label>
+            <label class="grid-radiobutton">
               <input type="radio" name="gridtype" value="Фиксированная">
               <span class="radiobutton-indicator"></span>
               Фиксированная
             </label>
             <br>
-            <label>
+            <label class="grid-radiobutton">
                 <input type="radio" name="gridtype" value="Резиновая">
                 <span class="radiobutton-indicator"></span>
                 Резиновая
@@ -80,24 +80,33 @@
           </div>
           <div class="filter-checkbox">
             <p class="filter-title">Особенности:</p>
-              <label>
+              <label class="features-checkbox">
                 <input type="checkbox" name="slider" checked>
+                <span class="checkbox-indicator"></span>
                 Слайдер
               </label>
-              <label >
+              <br>
+              <label class="features-checkbox">
                 <input type="checkbox" name="features">
+                <span class="checkbox-indicator"></span>
                 Блок преимуществ
               </label>
-              <label>
+              <br>
+              <label class="features-checkbox">
                 <input type="checkbox" name="news" checked>
+                <span class="checkbox-indicator"></span>
                 Новости
               </label>
-              <label>
+              <br>
+              <label class="features-checkbox">
                 <input type="checkbox" name="gallery">
+                <span class="checkbox-indicator"></span>
                 Галерея
               </label>
-              <label>
+              <br>
+              <label class="features-checkbox">
                 <input type="checkbox" name="cart">
+                <span class="checkbox-indicator"></span>
                 Корзина
               </label>
             </div>
@@ -123,7 +132,7 @@
           <section class="catalog">
             <div class="catalog-item">
               <div class="catalog-item-info">
-               <h2 class="info-title">Sedona</h2>
+               <a href="#"><h2 class="info-title">Sedona</h2></a>
                <p class="info-text">Информационный сайт для туристов</p>
                <a  class="info-price btn" href="#"><span>9900 руб.</span></a>
               </div>
@@ -131,7 +140,7 @@
             </div>
             <div class="catalog-item">
                 <div class="catalog-item-info">
-                  <h2 class="info-title">Pink APP</h2>
+                  <a href="#"><h2 class="info-title">Pink APP</h2></a>
                   <p class="info-text long-text">Продуктовый лендинг приложения для iOS и Android</p>
                   <a  class="info-price btn" href="#"><span>9900 руб.</span></a>
                 </div>
@@ -139,7 +148,7 @@
             </div>
             <div class="catalog-item">
               <div class="catalog-item-info">
-                <h2 class="info-title">Barbershop</h2>
+                <a href="#"><h2 class="info-title">Barbershop</h2></a>
                 <p class="info-text">Сайт салона красоты. Для мужчин, да.</p>
                 <a  class="info-price btn" href="#"><span>9900 руб.</span></a>
               </div>
@@ -147,7 +156,7 @@
             </div>
             <div class="catalog-item">
               <div class="catalog-item-info">
-                <h2 class="info-title">Mishka</h2>
+                <a href="#"><h2 class="info-title">Mishka</h2></a>
                 <p class="info-text">Интернет-магазин вязанных игрушек</p>
                 <a  class="info-price btn" href="#"><span>9900 руб.</span></a>
               </div>
@@ -155,7 +164,7 @@
             </div>
             <div class="catalog-item">
               <div class="catalog-item-info">
-                <h2 class="info-title">A plus</h2>
+                <a href="#"><h2 class="info-title">A plus</h2></a>
                 <p class="info-text long-text">Лендинг курсов повышения квалификации</p>
                 <a  class="info-price btn" href="#"><span>9900 руб.</span></a>
               </div>
@@ -163,7 +172,7 @@
             </div>
             <div class="catalog-item">
               <div class="catalog-item-info">
-                <h2 class="info-title">Kvast</h2>
+                <a href="#"><h2 class="info-title">Kvast</h2></a>
                 <p class="info-text long-text">Промо-сайт производителя крафтового кваса</p>
                 <a  class="info-price btn" href="#"><span>9900 руб.</span></a>
               </div>
@@ -210,5 +219,29 @@
         </div>  
       </div>  
     </footer>  
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-content-title">Напишите нам</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="info clearfix">
+          <label class="login-input">
+            Ваше имя:
+            <br>
+            <input type="text" name="login" placeholder="Представьтесь, пожалуйста" required>
+          </label>
+          <label class="email">  
+            Ваш e-mail:
+            <br>
+            <input type="email"  name="email" placeholder="Для отправки ответа" required>
+          </label>
+        </div>
+        <label class="comment">
+          Текст письма:
+          <textarea name="comment" rows="10" placeholder="В свободной форме" required></textarea>
+        </label class="submit">
+        <input class="btn" type="submit" value="Отправить">
+      </form>
+    </div>
+    <div class="modal-overlay"></div>  
   </body>
 </html>
