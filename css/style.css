@@ -264,10 +264,6 @@ body {
   border-radius: 4px;
 }
 
-.btn span:active {
-  opacity: 0.3;
-}
-
 .slider-info .btn {
   margin-bottom: 82px;
 }
@@ -306,12 +302,9 @@ body {
 
 .slider-info .btn:active {
   background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 #c13135;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(225, 225, 225, 0.3);
 } 
-
-.slider-info .btn:active{
-  background-color: #d7373b;
-}
 
 /*Стилизация главной страницы*/
 
@@ -389,7 +382,8 @@ body {
 
 .services-item-1 .btn:active {
   background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 #c13135;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(225, 225, 225, 0.3);
 } 
 
 .services-item-2 .btn {
@@ -402,7 +396,8 @@ body {
 
 .services-item-2 .btn:active {
   background-color: #00aa62;
-  box-shadow: inset 0 3px 0 0 #009958;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(225, 225, 225, 0.3);
 } 
 
 .services-item-3 .btn {
@@ -415,7 +410,8 @@ body {
 
 .services-item-3 .btn:active {
   background-color: #e5a722;
-  box-shadow: inset 0 3px 0 0 #ce961f;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(225, 225, 225, 0.3);
 } 
 
 .index-content {
@@ -612,14 +608,14 @@ body {
 }
 
 .range-filter .filter-title {
-  margin-top: 4px;
-  margin-bottom: 49px;
+  margin-top: 5px;
+  margin-bottom: 47px;
   letter-spacing: 1px;
 }
 
 .range-filter {
   width: 260px;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
 }
 
 .range-controls {
@@ -653,6 +649,7 @@ body {
   border: 8px solid #ffffff;
   background-color: #ababab;
   border-radius: 50%;
+  cursor: pointer;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -686,7 +683,7 @@ body {
 }
 
 .price-controls input {
-  margin-left: 10px;
+  margin-left: 9px;
   padding: 8px 10px;
   width: 60px;
   font-size: 16px;
@@ -702,11 +699,11 @@ body {
 
 .filter-radiobutton {
   font-size: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 }
 
 .filter-radiobutton .filter-title {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .grid-radiobutton input[type="radio"] {
@@ -730,7 +727,7 @@ body {
   opacity: 1;
 }
 
-.filter-radiobutton .disabled {
+.filter-radiobutton:disabled {
   opacity: 0.3;
 }
 
@@ -787,7 +784,7 @@ body {
   opacity: 1;
 }
 
-.filter-checkbox .disabled {
+.filter-checkbox:disabled {
   opacity: 0.3;
 }
 
@@ -822,7 +819,8 @@ body {
 .submit .btn:active {
   background-color: #d5d5d5;
   color: #a8a8a8;
-  box-shadow: inset 0 3px 0 0 #bfbfbf;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(225, 225, 225, 0.3);
 }
 
 .container-right {
@@ -990,7 +988,8 @@ body {
 
 .catalog-item .btn:active {
   background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 #c13135;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(225, 225, 225, 0.3);
 } 
 
 .paginator {
@@ -1037,11 +1036,8 @@ body {
 .paginator a:active {
   background-color: #d5d5d5;
   box-shadow: inset 0 3px 0 0 #bfbfbf;
+  color: rgba(225, 225, 225, 0.3);
   border: none;
-}
-
-.paginator span:active {
-  opacity: 0.3;
 }
 
 /*Стилизация футера*/
@@ -1080,14 +1076,14 @@ body {
 }
 
 .tel {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
 }
 
 .contacts .btn {
-  padding: 15px 44px;
+  padding: 17px 44px;
 }
 
 .contacts .btn:hover {
@@ -1096,7 +1092,8 @@ body {
 
 .contacts .btn:active {
   background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 #c13135;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+  color: rgba(225, 225, 225, 0.3);
 } 
 
 .map {
@@ -1171,6 +1168,10 @@ body {
   background-color: #e74246;
 }
 
+.social-btn:active {
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
+}
+
 .footer-text {
   float: left;
   width: 760px;
@@ -1178,7 +1179,7 @@ body {
 
 .footer-text h3 {
   margin: 0;
-  margin-top: 7px;
+  margin-top: 8px;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
@@ -1285,7 +1286,7 @@ body {
   width: 360px;
 }
 
-label {
+.modal-content label {
   font-size: 16px;
   font-family: "Roboto",  "Arial" , Sans-Serif;
   font-weight: 400px;
@@ -1293,7 +1294,7 @@ label {
   color: #000000;
 }
 
-input, textarea {
+.modal-content input, textarea {
   height: 25px;
   border: 2px solid #cccccc;
   border-radius: 5px;
@@ -1314,13 +1315,13 @@ textarea {
   padding: 11px 13px;
 }
 
-input[type="text"]:hover, 
+.modal-content input[type="text"]:hover, 
 input[type="email"]:hover, 
 textarea:hover {
   border: 2px solid #b4b9bb; 
 }
 
-input[type="text"]:focus, 
+.modal-content input[type="text"]:focus, 
 input[type="email"]:focus, 
 textarea:focus {
   border: 2px solid #000000; 
@@ -1332,18 +1333,18 @@ textarea:focus {
   color: #e74246;
 }*/
 
-input[type="submit"] { 
+.modal-content input[type="submit"] { 
   display: inline-block;
   padding: 16px 84px;
   width: auto;
   height: auto;
 }
 
-input[type="submit"]:hover {
+.modal-content input[type="submit"]:hover {
   background-color: #e74246;
 }
 
-input[type="submit"]:active {
+.modal-content input[type="submit"]:active {
   background-color: #d7373b;
-  box-shadow: inset 0 3px 0 0 #c13135;
+  box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
 } 
