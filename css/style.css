@@ -11,7 +11,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  font-family:  "Roboto",  "Arial" , Sans-Serif;
+  font-family: "Roboto", "Arial" , Sans-Serif;
   color: #283136;
 }
 
@@ -193,7 +193,7 @@ body {
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"]::before,
 #btn-2:checked ~ .slider-controls label[for="btn-2"]::before,
-#btn-3:checked ~ .slider-controls label[for="btn-3"]::before{ 
+#btn-3:checked ~ .slider-controls label[for="btn-3"]::before { 
   content: "";
   position: absolute;
   top: 5px;
@@ -280,15 +280,15 @@ body {
   display: none;
 }
 
-#btn-1:checked ~ .slides .slide:nth-child(1) { 
+#btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
 
-#btn-2:checked ~ .slides .slide:nth-child(2) { 
+#btn-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
 
-#btn-3:checked ~ .slides .slide:nth-child(3) { 
+#btn-3:checked ~ .slides .slide:nth-child(3) {
   display: block;
 }
 
@@ -300,11 +300,11 @@ body {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.1);
   color: rgba(225, 225, 225, 0.3);
-} 
+}
 
 /*Стилизация главной страницы*/
 
-.services  {
+.services {
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -383,11 +383,11 @@ body {
 } 
 
 .services-item-2 .btn {
-  background-color: #00ca74; 
+  background-color: #00ca74;
 }
 
 .services-item-2 .btn:hover {
- background-color: #00bc6c; 
+ background-color: #00bc6c;
 }
 
 .services-item-2 .btn:active {
@@ -397,11 +397,11 @@ body {
 } 
 
 .services-item-3 .btn {
-  background-color: #efc84a  
+  background-color: #efc84a;
 }
 
 .services-item-3 .btn:hover {
-  background-color: #eab534;  
+  background-color: #eab534;
 }
 
 .services-item-3 .btn:active {
@@ -421,7 +421,7 @@ body {
   width: 660px;
 }
 
-.index-content-left  p {
+.index-content-left p {
   margin-top: 0;
   margin-bottom: 39px;
   color: #283136;
@@ -441,7 +441,7 @@ body {
   color: #000000;
 }
 
-.index-content-left  .we-do {
+.index-content-left .we-do {
   margin-bottom: 24px;
 }
 
@@ -482,7 +482,7 @@ body {
   width: 360px;
 }
 
-.index-content-right  img {
+.index-content-right img {
   margin-bottom: 30px;
 }
 
@@ -684,7 +684,7 @@ body {
   width: 60px;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto",  "Arial" , Sans-Serif;
+  font-family: "Roboto", "Arial" , Sans-Serif;
   font-weight: 400px;
   text-align: center;
   color: #283136;
@@ -694,29 +694,31 @@ body {
 }
 
 .filter-radiobutton {
-  font-size: 0;
-  margin-bottom: 26px;
+  margin-bottom: 44px;
 }
 
 .filter-radiobutton .filter-title {
   margin-bottom: 16px;
 }
 
-.grid-radiobutton input[type="radio"] {
-  display: none;
+.filter-radiobutton .radiobutton {
+  margin: 0;
+  padding: 0;
+  padding-left: 36px;
+  list-style: none;
 }
 
-.grid-radiobutton  {
+.radiobutton li {
   position: relative;
-  display: inline-block;
   margin-bottom: 20px;
-  padding-left: 35px;
   font-size: 16px;
   line-height: 20px;
-  vertical-align: top;
   color: #283136;
   opacity: 0.4;
   cursor: pointer;
+}
+.radiobutton input[type="radio"] {
+  display: none;
 }
 
 .grid-radiobutton:hover {
@@ -727,53 +729,54 @@ body {
   opacity: 0.3;
 }
 
-.grid-radiobutton  input[type="radio"] + .radiobutton-indicator {
-  position: absolute;
-  top: -3px;
-  left: 1px;
-  width: 17px;
-  height: 17px;
-  background-color: #ffffff;
-  border: 4px solid #4d4d4d;
-  border-radius: 50%;
-}
-
-.grid-radiobutton input[type="radio"]:checked + .radiobutton-indicator::before {
+.radiobutton input[type="radio"] + label::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 9px;
-  height: 9px;
-  background-color: #4d4d4d;
-  border-radius: 50%;
+  top: -3px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/spritesheet.png") no-repeat -5px -71px;
+}
+
+.radiobutton input[type="radio"]:checked + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -35px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/spritesheet.png") no-repeat -5px -106px;
 }
 
 .filter-checkbox {
-  font-size: 0;
-  margin-bottom: 29px;
+  margin-bottom: 49px;
 }
 
 .filter-checkbox .filter-title {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
-.features-checkbox input[type="checkbox"] {
-  display: none;
+.filter-checkbox .checkbox {
+  margin: 0;
+  padding: 0;
+  padding-left: 36px;
+  list-style: none;
 }
 
-.features-checkbox {
+.filter-checkbox li {
   position: relative;
-  display: inline-block;
   margin-bottom: 20px;
-  padding-left: 35px;
   font-size: 16px;
   line-height: 20px;
-  vertical-align: top;
   color: #283136;
   opacity: 0.4;
   cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
 }
 
 .features-checkbox:hover {
@@ -784,19 +787,21 @@ body {
   opacity: 0.3;
 }
 
-.features-checkbox  input[type="checkbox"] + .checkbox-indicator {
+.checkbox input[type="checkbox"] + label::before {
+  content: "";
   position: absolute;
   top: -3px;
-  left: 1px;
+  left: -35px;
   width: 23px;
   height: 23px;
   background: url("../img/spritesheet.png") no-repeat -5px -5px;
 }
 
-.features-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+.checkbox input[type="checkbox"]:checked + label::before{
+  content: "";
   position: absolute;
   top: -3px;
-  left: 1px;
+  left: -35px;
   width: 27px;
   height: 23px;
   background: url("../img/spritesheet.png") no-repeat -5px -38px;
@@ -1072,14 +1077,14 @@ body {
 }
 
 .tel {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
 }
 
 .contacts .btn {
-  padding: 17px 44px;
+  padding: 16px 44px;
 }
 
 .contacts .btn:hover {
@@ -1199,9 +1204,9 @@ body {
   z-index: 1010;
   display: none;
   margin-left: -480px;
-  padding-top: 70px; 
-  padding-left: 100px; 
-  padding-right: 100px; 
+  padding-top: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-bottom: 83px;
   width: 760px;
   color: #000000;
@@ -1262,7 +1267,7 @@ body {
 
 .modal-content h2 {
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 42px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -1284,7 +1289,7 @@ body {
 
 .modal-content label {
   font-size: 16px;
-  font-family: "Roboto",  "Arial" , Sans-Serif;
+  font-family: "Roboto", "Arial" , Sans-Serif;
   font-weight: 400px;
   line-height: 18px;
   color: #000000;
@@ -1298,14 +1303,14 @@ body {
 
 .info input {
   margin-top: 7px;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
   padding: 10px 14px;
   width: 92%;
 }
 
 textarea {
-  margin-top: 9px;
-  margin-bottom: 42px;
+  margin-top: 7px;
+  margin-bottom: 38px;
   width: 96%;
   height: 93px;
   padding: 11px 13px;
@@ -1326,7 +1331,7 @@ textarea:focus {
 
 .modal-content input[type="submit"] { 
   display: inline-block;
-  padding: 16px 84px;
+  padding: 17px 83px;
   width: auto;
   height: auto;
 }

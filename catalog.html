@@ -21,22 +21,22 @@
             <li>
               <a href="#">Клиенты</a>
             </li>
-            <li class="active" >
+            <li class="active">
               <a>Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
             </li>
-          </ul>  
+          </ul>
         </nav>
         <div class="user-block">
           <a class="cart" href="#">Корзина</a>
         </div>
-      </div>  
+      </div>
       <div class="container">
         <div class="main-title">
           <h1>Магазин готовых шаблонов</h1>
-        </div>  
+        </div>
       </div>
     </header>
 
@@ -56,64 +56,54 @@
             <div class="price-controls">
                 <label class="min-price">от <input name="min-price" type="text" value="0"></label>
                 <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
-            </div>  
-          </div>  
+            </div>
+          </div>
           <div class="filter-radiobutton">
             <p class="filter-title">Сетка:</p>
-            <label class="grid-radiobutton">
-              <input type="radio" name="gridtype" value="Адаптивная" checked>
-              <span class="radiobutton-indicator"></span>
-              Адаптивная
-            </label>
-            <br>
-            <label class="grid-radiobutton">
-              <input type="radio" name="gridtype" value="Фиксированная">
-              <span class="radiobutton-indicator"></span>
-              Фиксированная
-            </label>
-            <br>
-            <label class="grid-radiobutton">
-                <input type="radio" name="gridtype" value="Резиновая">
-                <span class="radiobutton-indicator"></span>
-                Резиновая
-            </label> 
+            <ul class="radiobutton">
+              <li class="radiobutton-input">
+                <input type="radio" name="gridtype" value="Адаптивная" id="adoptive" checked>
+                <label class="grid-radiobutton" for="adoptive">Адаптивная</label>
+              </li>
+              <li class="radiobutton-input">
+                <input type="radio" name="gridtype" value="Фиксированная" id="fixed">
+                <label class="grid-radiobutton" for="fixed">Фиксированная</label>
+              </li>
+              <li class="radiobutton-input">
+                <input type="radio" name="gridtype" value="Резиновая" id="flex">
+                <label class="grid-radiobutton" for="flex">Резиновая</label> 
+              </li>
+            </ul>  
           </div>
           <div class="filter-checkbox">
             <p class="filter-title">Особенности:</p>
-              <label class="features-checkbox">
-                <input type="checkbox" name="slider" checked>
-                <span class="checkbox-indicator"></span>
-                Слайдер
-              </label>
-              <br>
-              <label class="features-checkbox">
-                <input type="checkbox" name="features">
-                <span class="checkbox-indicator"></span>
-                Блок преимуществ
-              </label>
-              <br>
-              <label class="features-checkbox">
-                <input type="checkbox" name="news" checked>
-                <span class="checkbox-indicator"></span>
-                Новости
-              </label>
-              <br>
-              <label class="features-checkbox">
-                <input type="checkbox" name="gallery">
-                <span class="checkbox-indicator"></span>
-                Галерея
-              </label>
-              <br>
-              <label class="features-checkbox">
-                <input type="checkbox" name="cart">
-                <span class="checkbox-indicator"></span>
-                Корзина
-              </label>
+              <ul class="checkbox">
+                <li class="checkbox-input">
+                  <input type="checkbox" name="layout" value="Слайдер" id="slider" checked>
+                  <label class="features-checkbox" for="slider">Слайдер</label>
+                </li>
+                <li class="checkbox-input">
+                  <input type="checkbox" name="layout" value="Блок преимуществ" id="features">
+                  <label class="features-checkbox" for="features">Блок преимуществ</label>
+                </li>
+                <li class="checkbox-input">
+                  <input type="checkbox" name="layout" value="Новости" id="news" checked>
+                  <label class="features-checkbox" for="news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="layout" value="Галерея" id="gallery">
+                  <label class="features-checkbox" for="gallery">Галерея</label>
+                </li>
+                <li class="checkbox-input">
+                  <input type="checkbox" name="layout" value="Корзина" id="cart">
+                  <label class="features-checkbox" for="cart">Корзина</label>
+                </li>
+              </ul>
             </div>
             <div class="submit" > 
               <input class="btn" type="submit" value="Показать">
-            </div>  
-        </form>  
+            </div>
+        </form> 
       </section>
 
       <div class="container-right">
@@ -125,8 +115,8 @@
             <a href="#">По названию</a>
             <a class="icon icon-down active" href="#">По уменьшению</a>
             <a class="icon icon-up" href="#">По возрастанию</a>
-          </div>  
-        </section>  
+          </div>
+        </section>
 
         <div class="content">
           <section class="catalog">
@@ -150,7 +140,7 @@
               <div class="catalog-item-info">
                 <a href="#"><h2 class="info-title">Barbershop</h2></a>
                 <p class="info-text">Сайт салона красоты. Для мужчин, да.</p>
-                <a  class="info-price btn" href="#">9900 руб.</a>
+                <a class="info-price btn" href="#">9900 руб.</a>
               </div>
               <img src="img/img-barbershop.jpg" width="360" height="616" alt="Barbershop Borodinski">
             </div>
@@ -174,7 +164,7 @@
               <div class="catalog-item-info">
                 <a href="#"><h2 class="info-title">Kvast</h2></a>
                 <p class="info-text long-text">Промо-сайт производителя крафтового кваса</p>
-                <a  class="info-price btn" href="#">9900 руб.</a>
+                <a class="info-price btn" href="#">9900 руб.</a>
               </div>
               <img src="img/img-kvast.jpg" width="360" height="616" alt="Kvast">
             </div>
@@ -185,8 +175,8 @@
             <a href="#3">3</a>
             <a class="next" href="#next">Следующая</a>
           </div>
-        </div>  
-      </div>  
+        </div>
+      </div>
     </main>
 
 
@@ -201,10 +191,10 @@
           <div class="contacts-catalog-item tel">тел. +7 (812) 275-75-75</div>
           <a class="btn" href="#">Напишите нам</a>
         </div>
-        <div class="map">           
+        <div class="map">
           <img src="img/map-location-nerds.jpg" width="1440" height="416" alt="Карта">
-        </div>  
-      </section> 
+        </div>
+      </section>
       <div class="container">
         <div class="footer-bottom clearfix">
           <section class="social">
@@ -216,9 +206,9 @@
             <h3 class="join-us">Давайте дружить, это выгодно!</h3>
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </section>
-        </div>  
-      </div>  
-    </footer>  
+        </div>
+      </div>
+    </footer>
     <div class="modal-content">
       <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
       <h2 class="modal-content-title">Напишите нам</h2>
@@ -226,13 +216,11 @@
         <div class="info clearfix">
           <label class="login-input">
             Ваше имя:
-            <br>
             <input type="text" name="login" placeholder="Представьтесь, пожалуйста" required>
           </label>
-          <label class="email">  
+          <label class="email">
             Ваш e-mail:
-            <br>
-            <input type="email"  name="email" placeholder="Для отправки ответа" required>
+            <input type="email" name="email" placeholder="Для отправки ответа" required>
           </label>
         </div>
         <label class="comment">
@@ -242,6 +230,6 @@
         <input class="btn" type="submit" value="Отправить">
       </form>
     </div>
-    <div class="modal-overlay"></div>  
+    <div class="modal-overlay"></div>
   </body>
 </html>
